@@ -1,5 +1,5 @@
 import React from 'react'
-import Styles from "../Shop/Shop.module.css";
+// import Styles from "../Shop/shop.module.css";
 
 const Shop = () => {
     return (
