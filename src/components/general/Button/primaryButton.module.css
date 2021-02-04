@@ -1,0 +1,11 @@
+.buttonPrimary {
+    background-color:white;
+    border: 1px solid #205613;
+    color: #205613;
+    font-size: 18px;
+    padding: 10px 15px;
+}
+
+.buttonPrimary:not(:first-child) {
+    margin-left: 20px;
+}
