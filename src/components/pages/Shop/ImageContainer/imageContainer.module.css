@@ -1,0 +1,15 @@
+.ImageContainer {
+    height: 450px;
+    width: 300px;
+    /* background-color: blue; */
+    border: 2px solid blue;
+    max-width: 100%;
+    background-color: white;
+}
+
+.ImageContainer img {
+    max-width: 94%;
+    max-height: 94%;
+    margin: 3% 3% 0 3%;
+    /* margin-top: 10px; */
+}

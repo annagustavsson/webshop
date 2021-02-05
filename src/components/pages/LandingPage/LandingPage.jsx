@@ -1,6 +1,6 @@
 import React from 'react'
 import {useHistory} from "react-router-dom";
-import PrimaryButton from "../../general/Button/primaryButton"
+import PrimaryButton from "../../general/Buttons/PrimaryButton/PrimaryButton"
 import styles from "../LandingPage/landingpage.module.css"
 const LandingPage = () => {
 

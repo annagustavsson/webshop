@@ -1,0 +1,10 @@
+.roundedButton {
+    background-color: #F7F7F7;
+    border: none;
+    color:black;
+    font-size: 18px;
+    /* padding: 10px 15px; */
+    border-radius: 8px;
+    float: right;
+    margin-right: 5px;
+}
