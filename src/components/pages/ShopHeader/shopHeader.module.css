@@ -1,0 +1,14 @@
+.headerContainer {
+    max-width: 10%;
+    max-height: 5%;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.cart {
+    height: 25px;
+    position: absolute;
+    top: 5%;
+    right: 10%;
+}

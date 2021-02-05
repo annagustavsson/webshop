@@ -1,0 +1,17 @@
+.displayContainer {
+    height: 100vh;
+    /* background-color: white; */
+    border: 2px solid blue;
+}
+
+.displayContainer img {
+    /* max-width: 50%; */
+    max-height: 60%;
+    margin: 5% 5% 5% 5%;
+}
+
+.buttonContainer {
+    position: absolute;
+    right: 50%;
+    top: 50%;
+}

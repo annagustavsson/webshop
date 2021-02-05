@@ -1,4 +1,5 @@
 import React from 'react';
+import {useHistory} from "react-router-dom";
 import classes from './imageContainer.module.css';
 
 import RoundedButton from "../../../general/Buttons/RoundedButton/RoundedButton"
@@ -12,11 +13,13 @@ const ImageContainer = ({
     image,
     addToChartHandler
 }) => {
-    console.log(image, "image")
+
+    let history = useHistory()
+
     return (
   
         <div className={classes.ImageContainer} >
-            <img className={classes.img} src={image} alt="image" />
+            <img onClick={() => history.push("/viewprint")} src={image} alt="image" />
             {/* {id} */}
             {name}
             {price} SEK

@@ -7,7 +7,7 @@ import italy from "../../../resources/images/italy.png";
 import kristina from "../../../resources/images/kristina.png";
 
 import ImageContainer from "./ImageContainer/ImageContainer";
-
+import ShopHeader from "../ShopHeader/ShopHeader";
 
 const Shop = () => {
     const images = [
@@ -60,28 +60,30 @@ const Shop = () => {
             "name": "Flowers"  
         }
     ] 
+
+    
  
     const addToCartHandler = (id) => {
         console.log("this is id", id)
     }
 
-
     return (
 
-        <div className={classes.flexContainer}>
-            {
-                images.map(imageObject => (
-                    <ImageContainer
-                        id = {imageObject.id}
-                        name = {imageObject.name}
-                        price = {imageObject.price}
-                        image = {imageObject.img}
-                        addToChartHandler = {addToCartHandler}
-                    />
-                    
-                ))
-            }
-            
+        <div>
+            <ShopHeader/>
+            <div className={classes.flexContainer}>
+                {
+                    images.map(imageObject => (
+                        <ImageContainer
+                            id = {imageObject.id}
+                            name = {imageObject.name}
+                            price = {imageObject.price}
+                            image = {imageObject.img}
+                            addToChartHandler = {addToCartHandler}
+                        />
+                    ))
+                }
+            </div>
         </div>
 
     )

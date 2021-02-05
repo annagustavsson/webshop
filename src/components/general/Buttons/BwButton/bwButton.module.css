@@ -1,0 +1,11 @@
+.bwButton {
+    background-color:white;
+    border: 1px solid #000000;
+    color: #000000;
+    font-size: 18px;
+    padding: 5px 10px;
+}
+
+.bwButton:not(:first-child) { 
+    margin-left: 20px;
+}
