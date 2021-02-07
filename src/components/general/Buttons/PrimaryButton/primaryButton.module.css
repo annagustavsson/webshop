@@ -4,6 +4,7 @@
     color: #205613;
     font-size: 18px;
     padding: 10px 15px;
+    cursor: pointer;
 }
 
 .buttonPrimary:not(:first-child) {

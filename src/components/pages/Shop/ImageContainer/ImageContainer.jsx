@@ -21,11 +21,19 @@ const ImageContainer = ({
         <div className={classes.ImageContainer} >
             <img onClick={() => history.push("/viewprint")} src={image} alt="image" />
             {/* {id} */}
-            {name}
-            {price} SEK
-            <RoundedButton 
-            event = {() => addToChartHandler(id)}
-            text="Add to chart"/> 
+            <div className={classes.infoContainer}>
+                <div className={classes.infoText}>
+                    <div>{name}</div>
+                    <div>{price} SEK</div>
+                </div>
+                <div>
+                    <RoundedButton 
+                    event = {() => addToChartHandler(id)}
+                    text="Add to chart"/> 
+                </div>
+            </div>
+           
+            
         </div>
     
         

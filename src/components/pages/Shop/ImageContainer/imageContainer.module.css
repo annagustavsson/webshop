@@ -11,4 +11,16 @@
     max-height: 94%;
     margin: 3% 3% 0 3%;
     /* margin-top: 10px; */
+    cursor: pointer;
+}
+
+.infoContainer {
+    display: flex;
+    height: 50px;
+    background-color: teal;
+}
+
+.infoText {
+    display: flex;
+    flex-direction: column;
 }
