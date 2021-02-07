@@ -3,6 +3,7 @@ import picture from "../../../resources/images/ystad.png";
 import classes from "../DisplayPrint/displayPrint.module.css";
 
 import BwButton from "../../../components/general/Buttons/BwButton/BwButton";
+import WhiteButton from "../../../components/general/Buttons/Whitebutton/WhiteButton";
 
 const DisplayPrint = () => {
     return (
@@ -25,9 +26,9 @@ const DisplayPrint = () => {
                     <div className={classes.sizeDropDownPlaceHolder}></div>
                 </div>
                 <div className={classes.quantityContainer}>
-                    <BwButton text={"-"}/>
+                    <WhiteButton text={"-"}/>
                         <div>1</div>
-                    <BwButton text={"+"}/>
+                    <WhiteButton text={"+"}/>
                 </div>
                 
                 <div className={classes.informationButtonsContainer}>
