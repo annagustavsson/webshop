@@ -1,23 +1,41 @@
 import React from 'react'
-import image from "../../../resources/images/ystad.png";
+import picture from "../../../resources/images/ystad.png";
 import classes from "../DisplayPrint/displayPrint.module.css";
 
 import BwButton from "../../../components/general/Buttons/BwButton/BwButton";
-import Quantitycounter from "../../general/Quantitycounter/Quantitycounter";
 
 const DisplayPrint = () => {
     return (
         <div className={classes.displayContainer}>
-            <div>
-                <BwButton text={"-"}/>
-                <div>1</div>
-                <BwButton text={"+"}/>
+            <div className={classes.imagesContainer}>
+                <img src={picture} alt="image" />
+                <div className={classes.smallImagesContainer}>
+                    <img src={picture} alt="image" />
+                    <img src={picture} alt="image" />
+                </div>
             </div>
-             <img src={image} alt="image" />
-             <div className={classes.buttonContainer}>
-                 <BwButton text={"Buy know"}/>
-                 <BwButton text={"Add to chart"}/>
-             </div>
+            <div className={classes.informationContainer}>
+                <div className={classes.nameText}>Ystad</div>
+                <div className={classes.priceText}>399 SEK</div>
+                <div className={classes.infoText}>
+                 some info some info some info 
+                 </div>
+                <div className={classes.sizeContainer}>
+                    <div className={classes.sizeText}>size</div>
+                    <div className={classes.sizeDropDownPlaceHolder}></div>
+                </div>
+                <div className={classes.quantityContainer}>
+                    <BwButton text={"-"}/>
+                        <div>1</div>
+                    <BwButton text={"+"}/>
+                </div>
+                
+                <div className={classes.informationButtonsContainer}>
+                    <BwButton text={"Buy know"}/>
+                    <BwButton text={"Add to chart"}/>
+                </div>
+                
+            </div>
         </div>
     )
 }

@@ -8,7 +8,7 @@ import DisplayPrint from "./components/pages/DisplayPrint/DisplayPrint";
 function App() {
   return (
     <>
-    <h1>Anna Gustavsson Photography</h1>
+    {/* <h1>Anna Gustavsson Photography</h1> */}
     <Router>
       <Switch>
         <Route path="/" exact render={() => <LandingPage/>}/>

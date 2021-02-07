@@ -1,5 +1,7 @@
 * {
   box-sizing: border-box; /* Gör att den width och height vi sätter faktiskt är det vi säger*/
+  margin: 0;
+  padding: 0;
 }
 
 body {

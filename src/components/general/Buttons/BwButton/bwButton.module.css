@@ -5,7 +5,3 @@
     font-size: 18px;
     padding: 5px 10px;
 }
-
-.bwButton:not(:first-child) { 
-    margin-left: 20px;
-}

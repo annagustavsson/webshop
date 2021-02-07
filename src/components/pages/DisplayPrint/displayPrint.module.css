@@ -1,17 +1,102 @@
 .displayContainer {
-    height: 100vh;
-    /* background-color: white; */
-    border: 2px solid blue;
-}
-
-.displayContainer img {
-    /* max-width: 50%; */
-    max-height: 60%;
-    margin: 5% 5% 5% 5%;
+    display: flex;
+    margin-top: 40px;
 }
 
 .buttonContainer {
-    position: absolute;
-    right: 50%;
-    top: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 640px;
+    height: 100vh;
+    border: 2px solid red;
+}
+
+.quantityBox {
+    background-color: white;
+    height: 30px;
+    max-width: 100px;   
+}
+
+.imagesContainer {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin-left: 40px;
+}
+
+.imagesContainer img {
+    height: 500px;
+}
+
+.smallImagesContainer {
+    display: flex;
+    margin-top: 10px;
+}
+
+.smallImagesContainer img {
+    height: 100px;
+}
+
+.smallImagesContainer img:not(:first-child){
+    margin-left: 10px;
+}
+
+.informationContainer {
+    display: flex;
+    height: fit-content;
+    flex-direction: column;
+    width: 250px;
+    margin-left: 40px;
+}
+
+.informationButtonsContainer {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.informationButtons {
+    width: 20px;
+}
+
+.quantityContainer {
+    display: flex;
+    width: 100px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    margin-top: 10px;
+
+}
+
+.sizeContainer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.sizeText {
+    font-size: 15px
+}
+
+.sizeDropDownPlaceHolder {
+    width: 100%;
+    height: 20px;
+    border: 1px solid black;
+    background-color: white;
+}
+
+.nameText, .priceText {
+    font-size: 20px;
+}
+
+.priceText {
+    /* font-size: 20px; */
+}
+
+.infoText {
+    font-size: 15px;
+    margin-top: 10px;
 }

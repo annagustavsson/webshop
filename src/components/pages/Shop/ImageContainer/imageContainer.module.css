@@ -1,8 +1,7 @@
 .ImageContainer {
     height: 450px;
     width: 300px;
-    /* background-color: blue; */
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     max-width: 100%;
     background-color: white;
 }
