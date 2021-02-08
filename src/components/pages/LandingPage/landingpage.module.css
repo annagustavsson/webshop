@@ -3,9 +3,18 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
+    flex-direction: column;
+
 }
 
 body {
     background-color: #fff9e8;
 }
+
+.buttonContainer {
+    flex-direction: row;
+    margin-top: 70px;
+}
+
+
 

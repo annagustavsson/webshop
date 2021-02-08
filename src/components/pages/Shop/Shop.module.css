@@ -6,18 +6,8 @@
     height: fit-content;
     width: 1000px; /* ((Width på imgContainer) * 3) + 2 * (Margin left på imgContainer) */
     margin: 0 auto 30px auto;
-    /* margin-left: auto;
-    margin-right: auto; */
     flex-wrap: wrap;
 }
-
-/* .flexContainer div:not(:nth-child(3n + 1)) {
-    margin-left: 20px;
-}
-
-.flexContainer div:not(:nth-child(1):nth-child(2):nth-child(3)) {
-    margin-top: 20px;
-} */
 
 
 @media only screen and (min-width: 700px) {

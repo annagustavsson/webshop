@@ -1,5 +1,6 @@
 import {BrowserRouter as Router, Route, Switch, Link} from "react-router-dom"
-//import styles from "./general.module.css";
+import CartProvider from "./components/general/contexts/ProductContext";
+
 import LandingPage from "./components/pages/LandingPage/LandingPage";
 import Shop from "./components/pages/Shop/Shop";
 import Portfolio from "./components/pages/Portfolio/Portfolio";
@@ -7,6 +8,7 @@ import DisplayPrint from "./components/pages/DisplayPrint/DisplayPrint";
 
 function App() {
   return (
+    <CartProvider>
     <>
     {/* <h1>Anna Gustavsson Photography</h1> */}
     <Router>
@@ -18,6 +20,7 @@ function App() {
       </Switch>
     </Router>
     </>
+    </CartProvider>
     
   );  
 }
