@@ -27,7 +27,7 @@ const Shop = () => {
             "price":399,
             "name": "Italy" 
         }, {
-            "img": kristina,
+            "img": flowers,
             "id": 2003,
             "price":399,
             "name": "Kristina"  
@@ -49,7 +49,7 @@ const Shop = () => {
             "price":399,
             "name": "Italy" 
         }, {
-            "img": kristina,
+            "img": ystad,
             "id": 2003,
             "price":399,
             "name": "Kristina"  

@@ -4,6 +4,15 @@
     /* border: 2px solid blue; */
     max-width: 100%;
     background-color: white;
+
+}
+
+.ImageContainer:not(:nth-child(3n + 1)) {
+    margin-left: 20px;
+}
+
+.ImageContainer:not(:nth-child(1):nth-child(2):nth-child(3)) {
+    margin-top: 20px;
 }
 
 .ImageContainer img {
@@ -14,13 +23,23 @@
     cursor: pointer;
 }
 
+
 .infoContainer {
     display: flex;
     height: 50px;
-    background-color: teal;
 }
 
 .infoText {
     display: flex;
     flex-direction: column;
+    margin-left: 10px
 }
+
+.infoContainerButton {
+    display: flex;
+    justify-content: flex-end;
+    width: 220px;
+    /* det här är en ful lösning för knappen...! */
+
+}
+

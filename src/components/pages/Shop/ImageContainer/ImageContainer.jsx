@@ -26,10 +26,11 @@ const ImageContainer = ({
                     <div>{name}</div>
                     <div>{price} SEK</div>
                 </div>
-                <div>
-                    <RoundedButton 
+                <div className={classes.infoContainerButton}>
+                    <div><RoundedButton 
                     event = {() => addToChartHandler(id)}
-                    text="Add to chart"/> 
+                    text="Add to chart"/>
+                </div>
                 </div>
             </div>
            
