@@ -22,8 +22,6 @@ const LandingPage = () => {
                 event = {() => history.push("/portfolio")}
                 text="Portfolio"/> 
             </div>
-            
-
         </div>
     )
 }

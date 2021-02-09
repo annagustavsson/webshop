@@ -11,7 +11,7 @@ const ShopHeader = () => {
     const addToCart = useCartUpdate()
 
     return (
-        <div onClick={() => addToCart("hejhej")} className={classes.headerContainer}>
+        <div className={classes.headerContainer}>
             <img className={classes.cart} src={cartLogo} alt="Cart Logo" />
             <div>{cart}</div>
         </div>

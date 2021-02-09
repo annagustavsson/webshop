@@ -13,11 +13,13 @@ export const useCartUpdate = () => {
 }
 
 const CartProvider = ({children}) => {
-    const [cart, setCart] = useState([]);
+    //const [cart, setCart] = useState([]);
+    const [cart, setCart] = useState(0);
 
     const addToCart = (newProduct) => {
-        const tempCart = [...cart];
-        tempCart.push(newProduct);
+        //const tempCart = [...cart];
+        //tempCart.push(newProduct);
+        const tempCart = cart + newProduct;
         setCart(tempCart);
     }
 

@@ -1,6 +1,5 @@
 import React, {useContext} from 'react';
 import classes from "../Shop/shop.module.css";
-//import ApplicationContext from "../../general/ApplicationContext/ApplicationContext";
 
 import flowers from "../../../resources/images/flowers.png";
 import ystad from "../../../resources/images/ystad.png";
@@ -9,9 +8,9 @@ import kristina from "../../../resources/images/kristina.png";
 
 import ImageContainer from "./ImageContainer/ImageContainer";
 import ShopHeader from "../ShopHeader/ShopHeader";
+import {useCartUpdate, useCart} from "../../general/contexts/ProductContext";
 
 const Shop = () => {
-    //const printInfo = useContext(ApplicationContext)
     const images = [
         {
             "img": flowers,
@@ -63,8 +62,12 @@ const Shop = () => {
         }
     ] 
 
+    const cart = useCart()
+    const addToCart = useCartUpdate()
+
     const addToCartHandler = (id) => {
-        console.log("this is id", id)
+        console.log("current id", id)
+        addToCart(1)
     }
 
     return (
