@@ -1,7 +1,6 @@
 .ImageContainer {
     height: 450px;
     width: 300px;
-    /* border: 2px solid blue; */
     max-width: 100%;
     background-color: white;
 
@@ -19,7 +18,6 @@
     max-width: 94%;
     max-height: 94%;
     margin: 3% 3% 0 3%;
-    /* margin-top: 10px; */
     cursor: pointer;
 }
 
@@ -39,7 +37,7 @@
     display: flex;
     justify-content: flex-end;
     width: 220px;
-    /* det här är en ful lösning för knappen...! */
+    /* ändra detta */
 
 }
 

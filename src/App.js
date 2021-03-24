@@ -10,7 +10,6 @@ function App() {
   return (
     <CartProvider>
     <>
-    {/* <h1>Anna Gustavsson Photography</h1> */}
     <Router>
       <Switch>
         <Route path="/" exact render={() => <LandingPage/>}/>

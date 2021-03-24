@@ -2,9 +2,7 @@ import React from 'react';
 import {useHistory} from "react-router-dom";
 import classes from './imageContainer.module.css';
 
-import RoundedButton from "../../../general/Buttons/RoundedButton/RoundedButton"
- //import PrimaryButton from "../../../general/Buttons/PrimaryButton/PrimaryButton"
-
+import RoundedButton from "../../../general/Buttons/RoundedButton/RoundedButton";
 
 const ImageContainer = ({ 
     id, 
