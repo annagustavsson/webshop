@@ -3,6 +3,7 @@ import {useHistory} from "react-router-dom";
 
 import PrimaryButton from "../../general/Buttons/PrimaryButton/PrimaryButton";
 import LandingHeader from "../LandingHeader/LandingHeader";
+import HamburgerMenu from "../../general/HamburgerMenu/HamburgerMenu";
 import classes from '../LandingPage/landingpage.module.css';
 
 import styles from "../LandingPage/landingpage.module.css";
@@ -12,8 +13,11 @@ const LandingPage = () => {
 
 
     return (
+        <div>
+        <HamburgerMenu/>
         <div className={styles.flexContainer}>
             <LandingHeader/>
+            <HamburgerMenu/>
             <div className={classes.buttonContainer}>
                 <PrimaryButton 
                 event = {() => history.push("/shop")}
@@ -22,6 +26,7 @@ const LandingPage = () => {
                 event = {() => history.push("/portfolio")}
                 text="Portfolio"/> 
             </div>
+        </div>
         </div>
     )
 }
