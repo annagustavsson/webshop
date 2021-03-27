@@ -14,7 +14,6 @@ const ShopHeader = () => {
     return (
         <div className={classes.headerContainer}>
             <img className={classes.cart} src={cartLogo} alt="Cart Logo" />
-            <img className={classes.cart} src={menuIcon} alt="b" />
             <div>{cart}</div>
         </div>
     )

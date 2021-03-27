@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import {useHistory} from "react-router-dom";
 
 import PrimaryButton from "../../general/Buttons/PrimaryButton/PrimaryButton";
@@ -12,12 +12,19 @@ const LandingPage = () => {
     let history = useHistory()
 
 
+    const [isClicked, setClicked] = useState(false)
+    console.log(isClicked, "isClicked")
+
+    const changeClicked = () => {
+        setClicked(!isClicked)
+    }
+
+
     return (
-        <div>
-        <HamburgerMenu/>
+        <>
+        <div><HamburgerMenu isClicked={isClicked} onClick={changeClicked}/></div>
         <div className={styles.flexContainer}>
             <LandingHeader/>
-            <HamburgerMenu/>
             <div className={classes.buttonContainer}>
                 <PrimaryButton 
                 event = {() => history.push("/shop")}
@@ -27,7 +34,7 @@ const LandingPage = () => {
                 text="Portfolio"/> 
             </div>
         </div>
-        </div>
+        </>
     )
 }
 
