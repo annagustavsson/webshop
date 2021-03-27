@@ -1,5 +1,6 @@
 import React from 'react'
 import cartLogo from "../../../resources/icons/cart.svg";
+import menuIcon from "../../../resources/icons/hamburgerMenu1.svg"
 
 import classes from "./shopHeader.module.css";
 import {useCartUpdate, useCart} from "../../general/contexts/ProductContext";
